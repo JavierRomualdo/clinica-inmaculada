@@ -27,14 +27,14 @@ async function usuariosPost(req, res) {
         return res.status(201).json({
           success: true,
           extraInfo: usuario,
-          title: 'Usuario actualizado',
+          title: 'Paciente verificado',
           icon: 'info',
-          msg: `El usuario con DNI, ${ usuario.NRO_DOCUMENTO }, se ha actualizado.`
+          msg: `Usted pertenece a la Clínica Inmaculada, nos estaremos comunicando para su consulta preventiva.`
         });
       } else {
         return res.status(201).json({
           success: false,
-          title: 'Error al actualizar',
+          title: 'Error al verificar',
           icon: 'error',
           // extraInfo: usuario,
           msg: `Error al actualizar usuario!`
@@ -47,12 +47,16 @@ async function usuariosPost(req, res) {
       // await usuario.save();
       
     } else {
+      // Guardar usuario
+      const usuario = new Usuario(body);
+      await usuario.save();
+
       return res.status(201).json({
         success: false,
-        title: 'Usuario no encontrado',
+        title: 'Paciente no encontrado',
         icon: 'warning',
         // extraInfo: usuario,
-        msg: `El usuario con DNI, ${ NRO_DOCUMENTO }, no existe.`
+        msg: `Verificaremos su afiliación.`
       });
     }
   } catch (error) {
