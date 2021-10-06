@@ -144,9 +144,16 @@
           text: `${ res.data.msg }`,
           icon: res.data.icon,
           // showCancelButton: true,
-          confirmButtonText: 'Cerrar',
+          confirmButtonText: 'Aceptar',
           // cancelButtonText: 'Aceptar'
         }).then((result) => {
+          if (result.isConfirmed) {
+            $( "#NRO_DOCUMENTO" ).val("");
+            $( "#NOMBRES_TRA" ).val("");
+            $( "#AP_PATERNO" ).val("");
+            $( "#AP_MATERNO" ).val("");
+            $( "#TELEFONO" ).val("");
+          }
         })
 
       } else {
