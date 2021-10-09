@@ -46,71 +46,104 @@
 
     <div class="bg-clinica">
       <div class="container pb-5">
-        <div class="text-center pt-5">
-          <img src="assets/img/presentacion.jpeg" width="30%" height="10%"/>
-        </div>
-        <h1 class="text-center mt-3 text-white">
-          Consulta de Beneficiario
-        </h1>
-        <h5 class="text-center mb-5text-white">
-          Consulte si eres parte de la Clinica Inmaculada
-        </h5>
-        
-        <div>
-          <form id="target">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="NRO_DOCUMENTO" class="form-label fw-bold">
-                    DNI <span class="text-primary"> * </span>
-                  </label>
-                  <input type="text" class="form-control" id="NRO_DOCUMENTO" required>
-                  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        <div class="row">
+          <div class="col-md-6">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/presentacion.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="NOMBRES_TRA" class="form-label fw-bold">
-                    Nombres <span class="text-primary"> * </span>
-                  </label>
-                  <input type="text" class="form-control" id="NOMBRES_TRA" required>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!--div class="text-center pt-5">
+              <img src="assets/img/presentacion.jpeg" width="30%" height="10%"/>
+            </div-->
+            <h1 class="text-center mt-3 text-white">
+              Consulta de Beneficiario
+            </h1>
+            <h5 class="text-center mb-5text-white">
+              Consulte si eres parte de la Clinica Inmaculada
+            </h5>
+            
+            <div>
+              <form id="target">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="NRO_DOCUMENTO" class="form-label fw-bold">
+                        DNI <span class="text-primary"> * </span>
+                      </label>
+                      <input type="text" class="form-control" id="NRO_DOCUMENTO" required>
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="NOMBRES_TRA" class="form-label fw-bold">
+                        Nombres <span class="text-primary"> * </span>
+                      </label>
+                      <input type="text" class="form-control" id="NOMBRES_TRA" required>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="AP_PATERNO" class="form-label fw-bold">
+                        Apellido Paterno <span class="text-primary"> * </span>
+                      </label>
+                      <input type="text" class="form-control" id="AP_PATERNO" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="AP_MATERNO" class="form-label fw-bold">
+                        Apellido Materno <span class="text-primary"> * </span>
+                      </label>
+                      <input type="text" class="form-control" id="AP_MATERNO" required>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label for="TELEFONO" class="form-label fw-bold" length=12>
+                        Teléfono <span class="text-primary"> * </span>
+                      </label>
+                      <input type="text" class="form-control" id="TELEFONO" required>
+                    </div>
+                  </div>
+                </div>
+      
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+              </form>
+      
+      
+      
             </div>
             
-            <div class="row">
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="AP_PATERNO" class="form-label fw-bold">
-                    Apellido Paterno <span class="text-primary"> * </span>
-                  </label>
-                  <input type="text" class="form-control" id="AP_PATERNO" required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="AP_MATERNO" class="form-label fw-bold">
-                    Apellido Materno <span class="text-primary"> * </span>
-                  </label>
-                  <input type="text" class="form-control" id="AP_MATERNO" required>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-md-12">
-                <div class="mb-3">
-                  <label for="TELEFONO" class="form-label fw-bold" length=12>
-                    Teléfono <span class="text-primary"> * </span>
-                  </label>
-                  <input type="text" class="form-control" id="TELEFONO" required>
-                </div>
-              </div>
-            </div>
-  
-            <button type="submit" class="btn btn-primary">Aceptar</button>
-          </form>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/img/mamografia.jpeg" alt="">
+          </div>
         </div>
+
       </div>
       
     </div>
