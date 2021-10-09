@@ -22,6 +22,10 @@ const Usuario = dbMysql.define("usuario", {
     type: DataTypes.STRING,
     defaultValue: null,
   },
+  EDAD: {
+    type: DataTypes.INTEGER,
+    defaultValue: null,
+  },
   TELEFONO: {
     type: DataTypes.STRING,
     defaultValue: null,
