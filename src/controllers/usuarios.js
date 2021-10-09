@@ -24,12 +24,16 @@ async function usuariosPost(req, res) {
       );
 
       if (resp[0]) {
+        let msj= ""
+        if(usuario.EDAD<3){
+          msj="PACIENTE CONTROL DE ANEMIA"
+        }
         return res.status(201).json({
           success: true,
           extraInfo: usuario,
           title: 'Paciente verificado',
           icon: 'info',
-          msg: `Usted pertenece a la Clínica Inmaculada, nos estaremos comunicando para su consulta preventiva.`
+          msg: msj
         });
       } else {
         return res.status(201).json({
