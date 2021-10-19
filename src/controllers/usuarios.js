@@ -25,7 +25,16 @@ async function usuariosPost(req, res) {
 
       if (resp[0]) {
         let msj= ""
-        if(usuario.EDAD<3){
+        if(usuario.EDAD<3 && usuario.EDAD>1){
+          msj="PACIENTE CONSULTA PREVENTIVA PARA CRED Y ANEMIA"
+        }
+        if(usuario.EDAD<1 ){
+          msj="PACIENTE CONSULTA PARA INMUNIZACIONES"
+        }
+        if(usuario.EDAD>60 && usuario.EDAD<98){
+          msj="PACIENTE CONSULTA PREVENTIVA CONTRA DIABETES, HIPERTENSION "
+        }
+        if(usuario.EDAD<20 ){
           msj="PACIENTE CONTROL DE ANEMIA"
         }
         return res.status(201).json({
