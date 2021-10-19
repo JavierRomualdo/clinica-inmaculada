@@ -40,7 +40,7 @@ async function usuariosPost(req, res) {
         return res.status(201).json({
           success: true,
           extraInfo: usuario,
-          title: 'Paciente verificado',
+          title: 'Perteneces a nuestra institucion Bienvenido a IPRESS ESSALUD CLINCIA INMACULADA',
           icon: 'info',
           msg: msj
         });
