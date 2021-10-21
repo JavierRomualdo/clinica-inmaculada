@@ -42,7 +42,7 @@ body{
     font-size: 2.85714rem!important;
     color: #000000 !important;
     font-weight: normal !important;
-    padding: 20px;
+    padding: 40px;
     line-height: 1;
 }
 
@@ -50,37 +50,15 @@ body{
     width: 100%;
     margin: auto;
 }
-/*.form{
-    place-content: center space-around;
-    align-items: center;
-    flex-direction: row;
-    box-sizing: border-box;
-    display: flex;
-    color: #555;
+.main-form{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px;
+}
+.form-{
+    display: grid;
 }
 
-.form- {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .form- input {
-    width: 90%;
-    height: 30px;
-    margin: 0.5rem;
-  }
-  
-  .form- button {
-    padding: 0.5em 1em;
-    border: none;
-    background: rgb(100, 200, 255);
-    cursor: pointer;
-  }*/
   
 
 .footer-page{
