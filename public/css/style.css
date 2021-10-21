@@ -100,3 +100,6 @@ body{
     flex: 1 1 100%;
     max-width: 50%;
 }
+span{
+    padding: 5px;
+}
