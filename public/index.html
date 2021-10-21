@@ -10,11 +10,16 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-  <style type="text/css">
-    .fondo {
-      background-color: #49a5e6;
+  <style>
+    .bg-clinica {
+      background-color: #3982e2;
+      /*background-image: url("assets/img/fondo.jpg");*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
     }
-  </style>
+    </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -25,81 +30,101 @@
   <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css"> -->
 
 </head>
-<body class="cuerpo">
-    ESTE ES UN MENSAJE DE PRUEBA
-    <header>ENCABEZADO</header>
-
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nuestro equipo</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-
-       <!-- Un formulario de búsqueda es una forma no-lineal de hacer búsquedas en un sitio web. -->
-
-       <form>
-         <input type="search" name="q" placeholder="Buscar">
-         <input type="submit" value="¡Vamos!">
-       </form>
-     </nav>
-     <main>
-
-      <!-- Contiene un artículo -->
- 
-
-      <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
-      <aside>
-        <h2>Relacionado</h2>
-
-        <ul>
-          <li><a href="#">Oh, me gusta estar junto al mar</a></li>
-          <li><a href="#">Oh, me gusta estar junto al mar</a></li>
-          <li><a href="#">Aunque en el norte de Inglaterra</a></li>
-          <li><a href="#">Nunca deja de llover</a></li>
-          <li><a href="#">Oh, bueno...</a></li>
-        </ul>
-      </aside>
-
-    </main>
-
-    <!-- Y aquí está nuestro pie de página principal que se utiliza en todas las páginas de nuestro sitio web -->
-    <section class="fondo">
-      <div class="text-center text-md-left g-py-40 g-color-gray-dark-v5 container">
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-center g-mb-15 g-mb-0--md w-100 mb-0">
-            <div class="landing-block-node-text landing-semantic-text-medium js-animation animation-none mr-1 animated" style="animation-duration: 1000ms; animation-play-state: running;">© 2021 Grupo Carita Feliz S.A.&nbsp; &nbsp; &nbsp;</div>
+<body class="fondo">
+  <div align="center" class="cabecera">
+<table width="1000" border="0" align="center">
+    
+<tbody >
+  
+        
+      <td width="1007"><p><img src="assets/img/logo.png" width="500" height="84" usemap="#Map" align="middle">
+       
+  
+   
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/presentacion.jpeg" class="d-block w-100" width="340" height="260" >
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/mamo1.PNG" class="d-block w-100" width="340" height="260">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/riñon.jpg" class="d-block w-100" width="340" height="260">
+            </div>
           </div>
-    
-          <div class="col-md-6">
-            <ul class="list-inline float-md-right mb-0">
-              <li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="facebook">
-                <a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://facebook.com/CaritaFelizClinica" target="_self">
-                  <i class="landing-block-card-social-icon fa fa-facebook"></i>
-                </a>
-              </li>
-    
-              <li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="instagram">
-                <a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://www.instagram.com/clinicacaritafeliz/" target="_self">
-                  <i class="landing-block-card-social-icon fa fa-instagram"></i>
-                </a>
-              </li>
-              
-              <li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="youtube">
-                <a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://www.youtube.com/channel/UCFgQ2NfVOmXzPacpATzxEBQ" target="_self">
-                  <i class="landing-block-card-social-icon fa fa-youtube"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
-    </footer>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+  </div>
+      <td>
+       <p><h1>CONSULTA SI ERES PARTE DE CLINICA INMACULADA</h1></p>
+       <p>
+       <div > 
+          <form id="target">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <label for="NRO_DOCUMENTO" class="form-label fw-bold">
+                    DNI <span class="text-primary"> * </span>
+                  </label>
+                  <input type="text" class="form-control" id="NRO_DOCUMENTO" required>
+                  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <label for="NOMBRES_TRA" class="form-label fw-bold">
+                    Nombres <span class="text-primary"> * </span>
+                  </label>
+                  <input type="text" class="form-control" id="NOMBRES_TRA" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <label for="AP_PATERNO" class="form-label fw-bold">
+                    Apellido Paterno <span class="text-primary"> * </span>
+                  </label>
+                  <input type="text" class="form-control" id="AP_PATERNO" required>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <label for="AP_MATERNO" class="form-label fw-bold">
+                    Apellido Materno <span class="text-primary"> * </span>
+                  </label>
+                  <input type="text" class="form-control" id="AP_MATERNO" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <label for="TELEFONO" class="form-label fw-bold" length=12>
+                    Teléfono <span class="text-primary"> * </span>
+                  </label>
+                  <input type="number" class="form-control" id="TELEFONO" required>
+                </div>
+              </div>
+            </div>
+              <button type="submit" class="btn btn-primary">Aceptar</button>
+         </form>
+       </div>
+       </div><!---fin de container-->
+       </p>
+      </td>
+  </tr>
+</div><!--FIN DE FORMULARIO CENTRADO--->
+</tbody></table>
 </body>
 <script>
   $( "#target" ).submit(function( event ) {
