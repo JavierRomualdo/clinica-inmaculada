@@ -14,15 +14,15 @@ body{
 }
 
 .logo-page{
-    margin: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
     padding: 5px;
 }
 
 .logo-page img{
     width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-from{
@@ -38,7 +38,7 @@ body{
     padding: 20px;
     line-height: 1;
 }
-formularop-page h2{
+.formulario-page h2{
     font-size: 2.85714rem!important;
     color: #000000 !important;
     font-weight: normal !important;
@@ -50,14 +50,38 @@ formularop-page h2{
     width: 100%;
     margin: auto;
 }
-#target{
+/*.form{
     place-content: center space-around;
     align-items: center;
     flex-direction: row;
     box-sizing: border-box;
     display: flex;
     color: #555;
-}
+}*/
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(100, 200, 255);
+    cursor: pointer;
+  }
+  
 
 .footer-page{
     height: 250px;
