@@ -72,3 +72,29 @@ body{
     padding: 60px 10px;
     overflow: hidden;    
 }
+.footer-top{
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center space-between;
+    align-items: center;
+}
+.footer-down{
+    border-top: 1px solid #d5d4d4;
+    text-align: right;
+}
+
+.content-f-left{
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 30%;
+}
+}
+
+.content-f-rigth{
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 100%;
+    max-width: 30%;
+}
