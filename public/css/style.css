@@ -1,8 +1,53 @@
-.bg-clinica {
-    background-color: #ee0202;
-    /*background-image: url("assets/img/fondo.jpg");*/
-    background-size: cover;
+body{
+    background-color: #f4f4f4;
+    border: 0;
+}
+
+#content-page{
+    width: 100%;
+    height: auto !important;
+}
+
+.head-page{
+    height: 150px;
+    background: #8cbae4;
+}
+
+.logo-page{
+    margin: auto;
+}
+
+.logo-page img{
+    width: auto;
+}
+
+.title-from{
+    text-align: center;
+    background-color: rgb(142, 142, 142) !important;
+    padding: 12px;
+}
+
+.title-from h1{
+    font-size: 2.85714rem!important;
+    font-weight: 600!important;
+    color: #fff!important;
+    padding: 20px;
+    line-height: 1;
+}
+}
+
+.formulario-page{
+    width: 100%;
+    margin: auto;
+}
+.footer-page{
+    height: 250px;
+    background-image: -webkit-radial-gradient(50% 50%,circle farthest-side,#2294d7,#275296);
+    background-image: -moz-radial-gradient(50% 50%,circle farthest-side,#2294d7,#275296);
+    background-image: -o-radial-gradient(50% 50%,circle farthest-side,#2294d7,#275296);
+    background-image: radial-gradient(circle farthest-side at 50% 50%,#2294d7,#275296);
     background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
-  }
+    color: #fff;
+    padding: 60px 10px;
+    overflow: hidden;    
+}
