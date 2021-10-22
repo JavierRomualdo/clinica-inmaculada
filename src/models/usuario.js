@@ -34,6 +34,10 @@ const Usuario = dbMysql.define("usuario", {
     type: DataTypes.BOOLEAN,
     defaultValue: false,
   },
+  SEXO: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: false,
+  },
 });
 
 module.exports = Usuario;
