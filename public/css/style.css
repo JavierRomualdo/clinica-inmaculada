@@ -9,12 +9,13 @@ body{
 }
 
 .head-page{
-    height: 150px;
+    height: 120px;
     background: #8cbae4;
 }
 
 .logo-page{
-    
+    max-width: 1100px;
+    margin: auto;
     padding: 5px;
 }
 
