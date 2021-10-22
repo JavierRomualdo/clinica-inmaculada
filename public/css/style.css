@@ -110,6 +110,13 @@ span{
 .content-f-rigth a:hover{
     color: #b1b1b1;
 }
+.content-f-left a{
+    text-decoration: none;
+    color: #fff;
+}
+.content-f-left a:hover{
+    color: #b1b1b1;
+}
 
 /*Ventana Flotante*/
 .modal{
