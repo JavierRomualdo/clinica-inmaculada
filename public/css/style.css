@@ -105,6 +105,10 @@ span{
 }
 .content-f-rigth a{
     text-decoration: none;
+    color: #fff;
+}
+.content-f-rigth a:hover{
+    color: #b1b1b1;
 }
 
 /*Ventana Flotante*/
