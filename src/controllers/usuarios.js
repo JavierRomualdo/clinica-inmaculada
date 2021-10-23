@@ -34,7 +34,7 @@ async function usuariosPost(req, res) {
         if(usuario.EDAD>60 && usuario.EDAD<98){
           msj="PACIENTE CONSULTA PREVENTIVA CONTRA DIABETES, HIPERTENSION "
         }
-        if((usuario.EDAD>20 && usuario.EDAD<65) && usuario.SEXO==false){
+        if( usuario.EDAD>20 && usuario.EDAD<65  && usuario.SEXO==false){
           msj="PACIENTE CONTROL DE PAPANICOLAO"
         }
         if(usuario.EDAD>49 && usuario.EDAD<50 && usuario.SEXO==false){
