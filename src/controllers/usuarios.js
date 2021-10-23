@@ -34,11 +34,17 @@ async function usuariosPost(req, res) {
         if(usuario.EDAD>60 && usuario.EDAD<98){
           msj="PACIENTE CONSULTA PREVENTIVA CONTRA DIABETES, HIPERTENSION "
         }
+        if(usuario.EDAD>5 && usuario.EDAD<13){
+          msj="PACIENTE CONSULTA PREVENTIVA PROTEGIDOS CON FLUOR"
+        }
+        if(usuario.EDAD>11 && usuario.EDAD<18){
+          msj="PACIENTE CONSULTA PREVENTIVA COBERTURA DE ATENCION ADOLESCENTES"
+        }
         if( usuario.EDAD>20 && usuario.EDAD<65  && usuario.SEXO==false){
           msj="PACIENTE CONTROL DE PAPANICOLAO"
         }
-        if(usuario.EDAD>49 && usuario.EDAD<50 && usuario.SEXO==false){
-          msj="PACIENTE CORRESPONDE CONTROL DE MAMOGRAFIA"
+        if(usuario.EDAD>76 && usuario.EDAD<50 && usuario.SEXO==false){
+          msj="DETECTAR PRECOZMENTE CANCER DE MAMA ES NUESTRA PRIORIDAD ACERCATE A TU CONTROL"
         }
         return res.status(201).json({
           success: true,
